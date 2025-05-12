@@ -58,7 +58,7 @@ namespace Xenia
                             Type = GameActionType.File,
                             Path = path,
                             IsPlayAction = true,
-                            Arguments = game.GameId
+                            Arguments = $@"""{game.Title}""" //Surround title with quotes so that argument parsing does not split titles containing spaces
                         }
                     },
                     IsInstalled = true,
